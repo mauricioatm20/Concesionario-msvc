@@ -1,6 +1,7 @@
 package com.concesionario.ventas.dto;
 
 import com.cocecionario.coche.entities.Coche;
+import com.cocecionario.coche.enums.EstadoVehiculo;
 import com.concesionario.cliente.entities.Customer;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,4 +21,7 @@ public class VentasDto {
     private Customer customer;
     private LocalDateTime fechaVenta;
     private Double precioVentaTotal;
+    private Long cocheId;
+    private Long customerId;
+    private EstadoVehiculo estadoVehiculo;
 }
